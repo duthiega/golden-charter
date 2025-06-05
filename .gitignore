@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/GoldenCharter.DocumentGenerator/.vs
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Api/bin/Debug/net8.0
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Api/obj
+*.user
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Core/bin/Debug/net8.0
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Core/obj/Debug/net8.0
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Core/obj
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Tests/bin/Debug/net8.0
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Tests/coverage-report
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Tests/obj/Debug/net8.0
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Tests/obj
+/GoldenCharter.DocumentGenerator/GoldenCharter.DocumentGenerator.Tests/TestResults
