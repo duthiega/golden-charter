@@ -1,0 +1,49 @@
+{
+  "type": "idd",
+  "data": {
+    "planHolder": {
+      "firstName": "Alistair",
+      "lastName": "MacGregor",
+      "age": 62,
+      "dob": "1961-02-28",
+      "email": "alistair.macgregor@example.co.uk",
+      "phone": "+44 7700 900123",
+      "address": {
+        "street": "15 Craigforth Terrace",
+        "city": "Stirling",
+        "county": "Stirling",
+        "postcode": "FK9 5RS",
+        "country": "UK"
+      }
+    },
+    "funeralHome": {
+      "name": "Golden Farewell Funerals",
+      "branchNumber": 400123,
+      "address": {
+        "street": "1 High Street",
+        "city": "Edinburgh",
+        "county": "Midlothian",
+        "postcode": "EH1 1AA",
+        "country": "UK"
+      },
+      "submittedBy": {
+        "firstName": "Mary",
+        "lastName": "Brown",
+        "email": "mary.brown@goldenfarewell.co.uk",
+        "phone": "+44 131 222 3456"
+      }
+    },
+    "funeralDetails": {
+      "plan": "Select funeral plan",
+      "date": "2023-02-05",
+      "time": "12:00",
+      "location": "St. Johns's Church, London",
+      "serviceType": "Funeral Service"
+    },
+    "paymentDetails": {
+      "arrangementFee": 325,
+      "method": "credit-card",
+      "allowedMethods": ["credit-card", "check", "direct-debit"]
+    }
+  }
+}

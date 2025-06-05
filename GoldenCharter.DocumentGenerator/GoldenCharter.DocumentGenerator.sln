@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenCharter.DocumentGenerator.Api", "GoldenCharter.DocumentGenerator.Api\GoldenCharter.DocumentGenerator.Api.csproj", "{10A4EDA8-7332-4D72-8999-CACF123585DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenCharter.DocumentGenerator.Core", "GoldenCharter.DocumentGenerator.Core\GoldenCharter.DocumentGenerator.Core.csproj", "{25A48483-1432-4079-8B21-CE0045754D85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldenCharter.DocumentGenerator.Tests", "GoldenCharter.DocumentGenerator.Tests\GoldenCharter.DocumentGenerator.Tests.csproj", "{C6A6A429-9761-4CF8-BE4A-9C83B9BAE2D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10A4EDA8-7332-4D72-8999-CACF123585DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10A4EDA8-7332-4D72-8999-CACF123585DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10A4EDA8-7332-4D72-8999-CACF123585DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10A4EDA8-7332-4D72-8999-CACF123585DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25A48483-1432-4079-8B21-CE0045754D85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25A48483-1432-4079-8B21-CE0045754D85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25A48483-1432-4079-8B21-CE0045754D85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25A48483-1432-4079-8B21-CE0045754D85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6A6A429-9761-4CF8-BE4A-9C83B9BAE2D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A6A429-9761-4CF8-BE4A-9C83B9BAE2D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A6A429-9761-4CF8-BE4A-9C83B9BAE2D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A6A429-9761-4CF8-BE4A-9C83B9BAE2D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {98C6CF8F-8913-43D1-ACF8-971D2310873D}
+	EndGlobalSection
+EndGlobal

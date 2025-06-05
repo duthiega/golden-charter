@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demands and needs</title>
+
+    <style>
+        html, body {
+            font-size: 11pt;
+            height: 100%;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        * {
+            font-family: Helvetica, sans-serif, Arial;
+        }
+
+        .main {
+            width: 80%;
+            margin: auto;
+        }
+
+        .font-light {
+            font-weight: 300;
+        }
+
+        .footer {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #d3d3d3;
+        }
+
+        @page {
+            size: a4 portrait;
+            margin: 8mm 14mm;
+            .main
+
+        {
+            width: 100%;
+            margin: auto;
+        }
+
+        @bottom-right {
+            content: "Page " counter(page) " of " counter(pages);
+            margin-top: -20px;
+        }
+
+        }
+
+        h1 {
+            color: #f52121;
+        }
+
+        p {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            color: rgb(0, 0, 0);
+            line-height: 1.2;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: currentColor;
+            margin: 0;
+            font-size: 11pt;
+            padding: 2px;
+            margin-top: 10px;
+        }
+
+        /* Basic Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, p {
+            font-size: 11pt;
+            padding: 2px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Your demands and needs document</h1>
+
+        <p>
+            Based on the information you have told us and the options we offer, you've selected the funeral plan and payment method detailed below.
+            Please read this document carefully to ensure the plan you've selected meets your needs.
+            By continuing, you're confirming that you do not have a funeral plan in place already.
+        </p>
+
+        <h2>Your funeral plan</h2>
+        <table>
+            <tr><th>Funeral plan</th><td>{{funeralDetails.plan}}</td></tr>
+            <tr><th>Funeral date</th><td>{{funeralDetails.date}}</td></tr>
+            <tr><th>Funeral time</th><td>{{funeralDetails.time}}</td></tr>
+            <tr><th>Location</th><td>{{funeralDetails.location}}</td></tr>
+            <tr><th>Service Type</th><td>{{funeralDetails.serviceType}}</td></tr>
+        </table>
+
+        <h2>Plan Holder Details</h2>
+        <table>
+            <tr><td>First Name</td><td>{{planHolder.firstName}}</td></tr>
+            <tr><td>Last Name</td><td>{{planHolder.lastName}}</td></tr>
+            <tr><td>Age</td><td>{{planHolder.age}}</td></tr>
+            <tr><td>Date of Birth</td><td>{{planHolder.dob}}</td></tr>
+            <tr><td>Email</td><td>{{planHolder.email}}</td></tr>
+            <tr><td>Phone</td><td>{{planHolder.phone}}</td></tr>
+            <tr>
+                <td>Address</td>
+                <td>
+                    {{planHolder.address.street}}<br />
+                    {{planHolder.address.city}}, {{planHolder.address.county}}, {{planHolder.address.postcode}}<br />
+                    {{planHolder.address.country}}
+                </td>
+            </tr>
+        </table>
+
+        <h2 class="h3 mb-2">Summary of costs</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each lineItems}}
+                <tr>
+                    <td>{{description}}</td>
+                    <td>{{price}}</td>
+                    <td>{{total}}</td>
+                </tr>
+                {{/each}}
+                <tr>
+                    <td>SUBTOTAL</td>
+                    <td></td>
+                    <td>{{subtotal}}</td>
+                </tr>
+                <tr>
+                    <td>Instalment payment option charge</td>
+                    <td></td>
+                    <td>{{instalmentCharge}}</td>
+                </tr>
+                <tr>
+                    <td>TOTAL AMOUNT PAYABLE</td>
+                    <td></td>
+                    <td>{{totalAmount}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="footer">
+            <p class="font-light">Demands and needs documentation generated on <b>{{generatedDate}}</b></p>
+            <p class="font-light">
+                Golden Charter Ltd. Registered Office: One Fleet Place, London EC4M 7WS. Registered in England No. 02511598.<br>
+                Golden Charter Limited trading as Golden Charter Funeral Plans which is authorised and regulated by the Financial Conduct Authority, FRN: 965279.
+            </p>
+            <p class="font-light">Tel: 0800 833 800 (9am - 5pm, Mon to Fri)</p>
+        </div>
+    </div>
+</body>
+</html>

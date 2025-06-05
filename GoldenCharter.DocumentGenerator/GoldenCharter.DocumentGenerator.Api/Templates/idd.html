@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Initial disclosure document</title>
+
+    <style>
+        html, body {
+            font-size: 11pt;
+            height: 100%;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        * {
+            font-family: Helvetica, sans-serif, Arial;
+        }
+
+        .main{
+            width: 80%;
+            margin: auto;
+        }
+
+        .font-light {
+            font-weight: 300;
+        }
+
+        .footer{
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f4f4f4;
+            border-top: 1px solid #d3d3d3;
+        }
+
+        @page {
+            size: a4 portrait;
+            margin: 8mm 14mm;
+
+            .main{
+                width: 100%;
+                margin: auto;
+            }
+
+            @bottom-right{
+                content: "Page " counter(page) " of " counter(pages);
+                margin-top: -20px;
+            }
+        }
+
+        h1{
+            color: #f52121;
+        }
+
+        p {
+            -webkit-text-size-adjust: 100%;
+            tab-size: 4;
+            color: rgb(0, 0, 0);
+            line-height: 1.2;
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: currentColor;
+            margin: 0;
+            font-size: 11pt;
+            padding: 2px;
+            margin-top: 10px;
+        }
+
+        /* Basic Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, p {
+            font-size: 11pt;
+            padding: 2px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Your Initial disclosure document</h1>
+
+        <strong>For: {{planHolder.title}} {{planHolder.firstName}} {{planHolder.lastName}}</strong>
+
+        <p>
+            We're providing you with this document to ensure you have been given
+            important information relating to your plan. Please read this important document. It explains
+            information relating to the services we offer, any costs for those services and how we're regulated.
+        </p>
+
+        <h2>What will you pay us to arrange your plan?</h2>
+
+        <ul>
+            <li>An arrangement fee: £{{paymentDetails.arrangementFee}}</li>
+        </ul>
+
+        <h2>Method of payment</h2>
+
+        {{#if (eq paymentDetails.method "credit-card")}}
+        <p>
+            You have decided on credit card which means you will receive an email for your invoice.
+        </p>
+        {{/if}}
+
+        {{#if (eq paymentDetails.method "check")}}
+        <p>
+            You have decided on payment by cheque which means you will receive a letter through your door.
+        </p>
+        {{/if}}
+
+        {{#if (eq paymentDetails.method "direct-debit")}}
+        <p>
+            You have decided on payment by direct debit which means you will be phoned by someone in sales to complete your order.
+        </p>
+        {{/if}}
+
+
+        <h2>Presented by</h2>
+
+        <table>
+            <tr>
+                <th>Funeral home</th>
+                <td>{{funeralHome.name}}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    Branch: {{funeralHome.branchNumber}}<br>
+                    {{funeralHome.address.street}}<br>
+                    {{funeralHome.address.city}}<br>
+                    {{funeralHome.address.postcode}}
+                </td>
+            </tr>
+        </table>
+
+        <h2>Submitted by:</h2>
+
+        <table>
+            <tr>
+                <th>Funeral director</th>
+                <td>{{funeralHome.submittedBy.firstName}} {{funeralHome.submittedBy.lastName}}</td>
+            </tr>
+            <tr>
+                <th>Phone</th>
+                <td>{{funeralHome.submittedBy.phone}}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{funeralHome.submittedBy.email}}</td>
+            </tr>
+        </table>
+
+        <p>
+            <b>{{funeralHome.name}}</b> is an appointed representative of Golden Charter Limited
+            trading as Golden Charter Funeral Plans which is authorised and regulated by the
+            Financial Conduct Authority (Financial Services Register No. 965279) Golden Charter
+            Limited, Canniesburn Gate,10 Canniesburn Drive, Glasgow G61 1BF. Registered Office:
+            One Fleet Place, London EC4M 7WS. Registered in England No. 02511598.
+        </p>
+
+        <div class="footer">
+            <p class="font-light">Initial disclosure document generated on <b>{{generatedDate}}</b></p>
+            <p class="font-light">
+                Golden Charter Ltd. Registered Office: One Fleet Place, London EC4M 7WS. Registered in England No. 02511598.<br>
+                Golden Charter Limited trading as Golden Charter Funeral Plans which is authorised and regulated by the Financial Conduct Authority, FRN: 965279.
+            </p>
+            <p class="font-light">Tel: 0800 833 800 (9am - 5pm, Mon to Fri)</p>
+        </div>
+    </div>
+</body>
+</html>

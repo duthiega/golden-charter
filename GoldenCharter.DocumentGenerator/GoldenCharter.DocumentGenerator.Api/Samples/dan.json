@@ -1,0 +1,82 @@
+{
+  "type": "dan",
+  "data": {
+    "planHolder": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 45,
+      "dob": "1978-05-15",
+      "email": "john.doe@example.com",
+      "phone": "+44 1234 567890",
+      "address": {
+        "street": "123 Main St",
+        "city": "London",
+        "county": "Greater London",
+        "postcode": "SW1A 0AA",
+        "country": "UK"
+      }
+    },
+    "funeralHome": {
+      "name": "Smith & Jones Funeral Directors",
+      "branchNumber": "3000244",
+      "address": {
+        "street": "456 Oak Ave",
+        "city": "London",
+        "county": "Greater London",
+        "postcode": "EC1V 9LB",
+        "country": "UK"
+      },
+      "submittedBy": {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane.smith@example.com",
+        "phone": "+44 9876 543210"
+      }
+    },
+    "funeralDetails": {
+      "plan": "Basic funeral plan",
+      "date": "2024-02-05",
+      "time": "11:00",
+      "location": "St. Mary's Church, London",
+      "serviceType": "Funeral Service"
+    },
+    "lineItems": [
+      {
+        "description": "Basic Funeral Service",
+        "quantity": 1,
+        "price": 2000.00,
+        "total": 2000.00
+      },
+      {
+        "description": "Casket - Standard",
+        "quantity": 1,
+        "price": 1500.00,
+        "total": 1500.00
+      },
+      {
+        "description": "Embalming",
+        "quantity": 1,
+        "price": 800.00,
+        "total": 800.00
+      },
+      {
+        "description": "Visitation (1 day)",
+        "quantity": 1,
+        "price": 500.00,
+        "total": 500.00
+      },
+      {
+        "description": "Funeral Service at Chapel",
+        "quantity": 1,
+        "price": 1000.00,
+        "total": 1000.00
+      },
+      {
+        "description": "Hearse",
+        "quantity": 1,
+        "price": 750.00,
+        "total": 750.00
+      }
+    ]
+  }
+}
